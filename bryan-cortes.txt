@@ -151,8 +151,37 @@ Semantically correct HTML helps search engines, screen readers, and other user d
 
 Stretch Questions
 
-    1. What is the difference between an inline element and a block element?
+  1. What is the difference between an inline element and a block element?
+    inline elements do not force a new line to begin in the document flow. Block elements, on the other hand, typically cause a line break to occur  
+
     2. What happens when an element is positioned absolutely? 
+    An absolutely positioned element no longer exists in the normal document layout flow. Instead, it sits on its own layer separate from everything else.
+
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    I believe display: inline-block; and display: inline; would because it would only take up the space it needs but the width can still be changed
+
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    block
+    diplay block by default:
+        <h1> to <h6>
+        <p> 
+        <div>
+
+    display inline by default:
+        <span>
+        <a>
+        <img>
+
+
+    inline-block by default:
+        <button>
+        <input>
+        <select>
+
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+
+    the box model is content, padding, border, and margin. I believe the fix is to wrap the entire body in a div container with a class or id and give that class or id a width in css so no matter what device we are on the page arranges itself to the width of the viewport. 
+
+
+   --> 
+
