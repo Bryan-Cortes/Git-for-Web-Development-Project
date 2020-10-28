@@ -78,20 +78,76 @@ Semantically correct HTML helps search engines, screen readers, and other user d
 
     24. What is a pseudo selector?
     A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For example, :hover can be used to change a button's color when the user's pointer hovers over it.
-    
+
     25. What do we use the change the spacing between lines?
+    Use the line-height property in CSS to do so.
+
     26. What do we use to change the spacing between letters?
+    The letter-spacing property modifies the amount of space placed between adjacent characters.
+
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    The CSS text-transform property is the key to managing text uppercase and lowercase rendering.
+
     28. How do I add a 1px border around my div that is dotted and black?
+    div{
+    border: 1px dotted black;
+    }
+
     29. How do I select everything on the page? 
+    *{
+
+    }
     30. How do I write a comment in CSS?
+    A CSS comment is placed inside the <style> element, and starts with /* and ends with */ 
+    /* This is a single-line comment */
+
     31. How do I find out what file I am in, when I am using the command line? 
+    use command $pwd 
+
     32. Using the command line - how do I see a list of files/folders in my current folder?
+    use command $ls 
+
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    use command $rm to delete a file and $rm -r to delete a directory
+
     34. Why should I use version control? 
+    Version control helps teams solve problems, tracking every individual change by each contributor and helping prevent concurrent work from conflicting.
+
     35. How often should I commit to github?
+    commit changes every 30 minutes.
+
     36. What is the command we would use to push our repo up to github? 
+    git push -u origin [branch-name]
+
     37. Walk me through Lambda's git flow. 
+    1. Create your own repo by forking it (copy).
+
+    2. Clone your Repo using githubs 'Clone or download' button 
+
+    3. On the terminal use the $cd command to go to the directory where you are going to want to clone your forked Repo.
+
+    4. Use the git clone <link-to-repo> command to clone the repo to the directory you are currently in.
+        example: git clone https://github.com/Bryan-Cortes/Git-for-Web-Development-Project.git
+
+    5. use command $cd into the newly created repo using the cd <directory-name> command
+        example: cd Desktop ---> cd LambdaProjects ---> cd Git-for-Web-Development-Project 
+
+    6.Use the git checkout -b 'firstname-lastname' command to create your own branch name for the repo (this is the branch that you will be doing your work on)
+        example: git checkout -b 'bryan-cortes'
+
+    7. Now you can work on your repo. You can add and commit to this newly created branch
+        1st git add . will add the repo changes and make them ready for committing
+        2nd git commit -m "message here" will commit the changes with your specified commit message.
+        example: git add . (add) -----> git commit -m "progress got deleted so I will be comtting more often" (commit)
+
+    8.Push your changes back up to your Github repo. Using the git push -u origin [branch-name] will push all of your commits from your local machine up onto github. The branch name will be w.e name you picked during git checkout -b (command to create repo).
+        example: git push -u origin bryan-cortes
+
+    9. Go back to your forked Project repo on github and click on branch: master and scroll down to the branch-name that you choose for your forked repo. then click the New pull request button to make a pull request on your name branch
+
+    10. DO NOT CLICK THE Create pull request BUTTON UNTIL you have made sure to click the dropdown button that says base repository and CHANGE it to be your FORKED REPO(branch-name) instead of the original.
+
+    11. After you have changed the base repository 'Click Create Pull Request' and youre done!!
 
 Stretch Questions
 
