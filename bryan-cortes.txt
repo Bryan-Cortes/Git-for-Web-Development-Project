@@ -1,0 +1,187 @@
+Link to codepen: https://codepen.io/pandycham/pen/rNLmXRw?editors=1100
+
+1. What is Semantic HTML? 
+Semantically correct HTML helps search engines, screen readers, and other user devices determine the significance and context of web content.
+    2. What is HTML used for? 
+   Used to create and structure sections, paragraphs, headings, links, and blockquotes for web pages and applications.
+
+    3. What is an attribute and where do we put it? 
+    Attributes are ways to add more info to an element and are always specified in the start tag (or opening tag) and usually consists of name/value pairs like name="value" .
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+    H1 is used for the main  heading and should be used once.
+
+    5. Name two tags that have required attributes
+    img needs the src attribute and the a tags need href 
+
+    6. What do we put in the head of our HTML document? 
+    It contains information such as the page <title> , links to CSS, links to custom favicons, and other metadata.
+
+    7. What is an id? 
+    The id of an element is unique within a page, so the id selector is used to select one unique element.
+
+    8. What elements can I add an id to? 
+    all  elements on the body can have an id. 
+
+    9. How many times can I use the same id on a page? 
+    An element can't have more than one ID and an ID can't be used more than once in a page.
+
+    10. What is a class? 
+     class is a group of elements that are the same or similar. You can have as many elements as you want in a class.
+
+    11. What elements can I add a class to? 
+    all  elements on the body can have a class.
+
+    12. How many times can I use the same class on a page? 
+    A class can be on multiple elements
+
+    13. How do I get my link to open in a new tab?
+    target="_blank"
+
+    14. What is the alt attribute in the image tag used for? 
+    The alt attribute is the HTML attribute used in HTML to specify alternative text (alt text) that is to be rendered when the element(img) to which it is applied cannot be rendered.
+
+    15. How do I reference an id?
+    To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+
+    16. What is the difference between a section and a div
+    a section tag is Semantic while a div doesn't provide any info. 
+
+    17. What is CSS used for? 
+    Css is used for styling the HTML page.
+
+    18. How to we select an element? Example - every h2 on the page
+    To select an element, you must ride the selector element followed by curly braces.
+    selector{
+
+    }
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    The difference between an ID and a class is that an ID can be used to identify one element, whereas a class can be used to identify more than one. you could use a class to select multiple p tags and the id can be used on a H1 for example since there's only one h1 per page. 
+
+    20. How do we select classes in CSS?
+    To select an element with a class write a period (.) character, followed by the nae of the classs.
+
+    21. How do we select a p element with a single class of “human””?
+    .human p{
+
+    } 
+
+    22. What is a parent child selector? When would this be useful? 
+    The ("parent > child") selector selects all elements that are a direct children of the parent element.
+    ("parent > child") selector is good for styling in CSS because you're able to specific.
+
+    23. How do you select all links within a div with the class of sidebar?
+    .sidebar a{
+
+    }
+
+    24. What is a pseudo selector?
+    A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For example, :hover can be used to change a button's color when the user's pointer hovers over it.
+
+    25. What do we use the change the spacing between lines?
+    Use the line-height property in CSS to do so.
+
+    26. What do we use to change the spacing between letters?
+    The letter-spacing property modifies the amount of space placed between adjacent characters.
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    The CSS text-transform property is the key to managing text uppercase and lowercase rendering.
+
+    28. How do I add a 1px border around my div that is dotted and black?
+    div{
+    border: 1px dotted black;
+    }
+
+    29. How do I select everything on the page? 
+    *{
+
+    }
+    30. How do I write a comment in CSS?
+    A CSS comment is placed inside the <style> element, and starts with /* and ends with */ 
+    /* This is a single-line comment */
+
+    31. How do I find out what file I am in, when I am using the command line? 
+    use command $pwd 
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+    use command $ls 
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    use command $rm to delete a file and $rm -r to delete a directory
+
+    34. Why should I use version control? 
+    Version control helps teams solve problems, tracking every individual change by each contributor and helping prevent concurrent work from conflicting.
+
+    35. How often should I commit to github?
+    commit changes every 30 minutes.
+
+    36. What is the command we would use to push our repo up to github? 
+    git push -u origin [branch-name]
+
+    37. Walk me through Lambda's git flow. 
+    1. Create your own repo by forking it (copy).
+
+    2. Clone your Repo using githubs 'Clone or download' button 
+
+    3. On the terminal use the $cd command to go to the directory where you are going to want to clone your forked Repo.
+
+    4. Use the git clone <link-to-repo> command to clone the repo to the directory you are currently in.
+        example: git clone https://github.com/Bryan-Cortes/Git-for-Web-Development-Project.git
+
+    5. use command $cd into the newly created repo using the cd <directory-name> command
+        example: cd Desktop ---> cd LambdaProjects ---> cd Git-for-Web-Development-Project 
+
+    6.Use the git checkout -b 'firstname-lastname' command to create your own branch name for the repo (this is the branch that you will be doing your work on)
+        example: git checkout -b 'bryan-cortes'
+
+    7. Now you can work on your repo. You can add and commit to this newly created branch
+        1st git add . will add the repo changes and make them ready for committing
+        2nd git commit -m "message here" will commit the changes with your specified commit message.
+        example: git add . (add) -----> git commit -m "progress got deleted so I will be comtting more often" (commit)
+
+    8.Push your changes back up to your Github repo. Using the git push -u origin [branch-name] will push all of your commits from your local machine up onto github. The branch name will be w.e name you picked during git checkout -b (command to create repo).
+        example: git push -u origin bryan-cortes
+
+    9. Go back to your forked Project repo on github and click on branch: master and scroll down to the branch-name that you choose for your forked repo. then click the New pull request button to make a pull request on your name branch
+
+    10. DO NOT CLICK THE Create pull request BUTTON UNTIL you have made sure to click the dropdown button that says base repository and CHANGE it to be your FORKED REPO(branch-name) instead of the original.
+
+    11. After you have changed the base repository 'Click Create Pull Request' and youre done!!
+
+Stretch Questions
+
+  1. What is the difference between an inline element and a block element?
+    inline elements do not force a new line to begin in the document flow. Block elements, on the other hand, typically cause a line break to occur  
+
+    2. What happens when an element is positioned absolutely? 
+    An absolutely positioned element no longer exists in the normal document layout flow. Instead, it sits on its own layer separate from everything else.
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    I believe display: inline-block; and display: inline; would because it would only take up the space it needs but the width can still be changed
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    block
+    diplay block by default:
+        <h1> to <h6>
+        <p> 
+        <div>
+
+    display inline by default:
+        <span>
+        <a>
+        <img>
+
+
+    inline-block by default:
+        <button>
+        <input>
+        <select>
+
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+
+    the box model is content, padding, border, and margin. I believe the fix is to wrap the entire body in a div container with a class or id and give that class or id a width in css so no matter what device we are on the page arranges itself to the width of the viewport. 
+
+
+   --> 
+
