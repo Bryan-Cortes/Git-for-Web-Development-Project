@@ -10,26 +10,75 @@ Semantically correct HTML helps search engines, screen readers, and other user d
 
     4. What is the h1 tag used for? How many times should I use it on a page?
     H1 is used for the main  heading and should be used once.
+
     5. Name two tags that have required attributes
+    img needs the src attribute and the a tags need href 
+
     6. What do we put in the head of our HTML document? 
+    It contains information such as the page <title> , links to CSS, links to custom favicons, and other metadata.
+
     7. What is an id? 
+    The id of an element is unique within a page, so the id selector is used to select one unique element.
+
     8. What elements can I add an id to? 
+    all  elements on the body can have an id. 
+
     9. How many times can I use the same id on a page? 
+    An element can't have more than one ID and an ID can't be used more than once in a page.
+
     10. What is a class? 
+     class is a group of elements that are the same or similar. You can have as many elements as you want in a class.
+
     11. What elements can I add a class to? 
+    all  elements on the body can have a class.
+
     12. How many times can I use the same class on a page? 
+    A class can be on multiple elements
+
     13. How do I get my link to open in a new tab?
+    target="_blank"
+
     14. What is the alt attribute in the image tag used for? 
+    The alt attribute is the HTML attribute used in HTML to specify alternative text (alt text) that is to be rendered when the element(img) to which it is applied cannot be rendered.
+
     15. How do I reference an id?
+    To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+
     16. What is the difference between a section and a div
+    a section tag is Semantic while a div doesn't provide any info. 
+
     17. What is CSS used for? 
+    Css is used for styling the HTML page.
+
     18. How to we select an element? Example - every h2 on the page
+    To select an element, you must ride the selector element followed by curly braces.
+    selector{
+
+    }
+
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    The difference between an ID and a class is that an ID can be used to identify one element, whereas a class can be used to identify more than one. you could use a class to select multiple p tags and the id can be used on a H1 for example since there's only one h1 per page. 
+
     20. How do we select classes in CSS?
+    To select an element with a class write a period (.) character, followed by the nae of the classs.
+
     21. How do we select a p element with a single class of “human””?
+    .human p{
+
+    } 
+
     22. What is a parent child selector? When would this be useful? 
+    The ("parent > child") selector selects all elements that are a direct children of the parent element.
+    ("parent > child") selector is good for styling in CSS because you're able to specific.
+
     23. How do you select all links within a div with the class of sidebar?
+    .sidebar a{
+
+    }
+
     24. What is a pseudo selector?
+    A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For example, :hover can be used to change a button's color when the user's pointer hovers over it.
+    
     25. What do we use the change the spacing between lines?
     26. What do we use to change the spacing between letters?
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
